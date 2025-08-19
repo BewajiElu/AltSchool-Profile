@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheat Sheet</title>
+</head>
+<body>
+    <!--Headings have 6 different tags h1 - h6 -->
+    <h1>Heading One</h1>
+    <h2>Heading two</h2>
+    <h3>Heading Three</h3>
+    <h4>Heading Four</h4>
+    <h5>Heading Five</h5>
+    <h6>Heading six</h6>
+    
+    <!--Paragraphs use the p tag. It is displayed as a block-->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, blanditiis.
+    </p>
+
+    <!--Inline vs Block elements chart-->
+    <p>Inline elements do not start a new line and only take the necessary width
+     <strong>Block </strong> elements start on a new line and take full width available
+      <ul> 
+         <li>Block level tags:  div, h1-h6, p, form</li>
+         <li>Inline level tags: span, img, a </li>
+      </ul>
+    </p>
+     <!--The strong tag-->
+     <p>The Strong tag makes a text bold </p>
+      
+     <!--The em tag-->
+      <p>This emphasizes the text, by default this makes the font italic
+</p>
+      
+      <!--creating a link. This uses the a tag-->
+      <p>For example. Wrapping the text "Welcome to AltSchool" to go a link will follow the flow
+          <a href="https://learn.altschoolafrica.com">Welcome to AltSchool</a> 
+       </p>
+       
+         <!--To open this on a new tab, use attribute "target"-->
+         <p> If you do not want the user to leave your site, use the attribute "target" and that opens the link on a new tab
+          <a href="https://learn.altschoolafrica.com" target="_blank">Welcome to AltSchool</a> 
+       </p>
+
+       <!--List-->
+     <p>There are two types of list; Ordered "ol" tag and un-ordered list with the "ul" tag. using the ordered list tag itemizes your list using numbers and unordered list tag uses bullet point. The list item uses tag "li". See samples below </p>    
+         <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+            <li>List item 5</li>
+         </ul>
+
+         <ol>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+            <li>List item 5</li>
+         </ol>
+
+         <!--Tables-->
+         <p>To create a table use the "table" tag. Note that there are quite a few tags that go into creating a table. Create a heading using the "thead" tag and body using the "tbody" tag. Create each table row using the "tr" tag and each heading uses a "th" tag.To create data into the body use the tag "td" See sample below </p>
+          <table>
+           <thead>
+                   <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone number</th>
+                    <th>location</th>
+                   </tr>
+           </thead>
+
+            <tbody>
+                 <tr>
+
+                    <td>Bewaji Elu</td>
+                    <td>justagirlearncloud@gmail.com</td>
+                    <td>+234910004500</td>
+                    <td>Lagos, Nigeria</td>
+                 </tr>
+                 <tr>
+                    <td>Solomon Light</td>
+                    <td>Solomonlight@outlook.com</td>
+                    <td>+4479284018940</td>
+                    <td>Sheffield, United Kingdom</td>
+                 </tr>
+
+            </tbody>
+          </table>
+
+          <br>
+                <!--br tag create a line break. hr tag creates an horizontal line-->
+          <hr>
+ 
+          <!--Notes on Forms (this is quite useful for server side programming)-->
+          <p>html will only help create/build the look of a form but adds no functionalities (other programming language is required to make it functional). To create a form using the "form" tag. Attributes to note for forms "action" this submits the format to a certain page e.g php. method in forms is usally "POST" and this send your data to a secure database </p>
+
+          <form action="process.php">
+            
+           <label for="Name">First Name</label>
+           <input type="text">
+
+           <label for="Name">Last Name</label>
+           <input type="text">
+
+           <br>
+           <hr>
+           <!--To have your form on new line, the div tag comes into play.See below-->
+           
+           <div>
+             <label for="Name">First Name</label>
+             <input type="text" placeholder="Enter First Name">
+           </div>
+           
+           <br>
+
+           <div>
+             <label for="Name">Last Name</label>
+             <input type="text" placeholder="Enter Last Name">
+           </div>
+           
+           <br>
+
+           <div>
+             <label>Gender</label>
+             <select name="Gender" id="Gender">
+             <option value="male">Male</option>
+             <option value="female">Female</option>
+             <option value="other">Other</option>
+             </select>
+           </div>
+
+           <br>
+
+           <div>
+             <label for="age">Age</label>
+             <input type="number"  value="27">
+           </div>
+
+           <br>
+             <div>
+             <label for="dob">Date of Birth</label>
+             <input type="date">
+           </div>
+
+          <br>
+          <input type="submit" name="Submit" value="Submit">
+    </form>
+
+     <p>To create a drop down list use the "select tag". Data Input types have also been treated as seen above. The last thing needed for a form is an input button
+</p> 
+
+<!--Images, this is a self closing tag-->
+<p> To load an image you need to save the image in the same folder as html file. If the image is not placed in the root folder but in a sub folder then the folder name comes into place. Here I have placed my image in a sub folder named learning assets. The "alt" attribute in img tag is the text that displays when the image is missing or does not load. Width and height attribute helps size the image to fit your required space</p>
+<img src="learning assets/Learning Series.png" alt="My learning assets" width="400">
+
+<!--Abbreviations - this automatically comes with an underline and full meanings are shown when you hover it the abbrevaiated text-->
+
+<p> <abbr title="Thank God its Friday">TGIF</abbr> another AltSchool class starts by 6PM.</p>
+
+<!--Cite Tag-->
+
+<p> <cite>Learning HTML as a beginner</cite></p>
+
+<!--HTML 5 Semantic Tags-->
+
+<p>A semantic tag/element  clearly describes its meaning to both the browser and the developer. This are used to layout your website</p>
+
+<Ol>
+    <li>Header Tag: This would usually have the page header, logo, social media accounts etc </li>
+    <li>Nav Tag: is used to structure the Navigation bar</li>
+    <li>Section Tag: Describe </li>
+    <li>Article Tag: Can we usefully if the site is for a blog </li>
+    <li>Aside Tag: is for side bar cotent </li>
+    <li>footer Tag: for copyright, privacy policy list etc</li>
+</Ol>
+</body>
+</html>
